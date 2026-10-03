@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Один вечер</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Great+Vibes&family=Manrope:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bar t"></div><div class="bar b"></div>
+
+<section class="scene on" id="s0">
+  <p class="small">Кинокомпания «Моё сердце» представляет</p>
+  <h1>Один<br>вечер</h1>
+  <div class="orn">♥ ♥ ♥</div>
+  <p>В главных ролях: <span id="who1">ты</span> и я</p>
+  <button id="start">Смотреть</button>
+</section>
+
+<section class="scene" id="scratch">
+  <div class="perf t"></div><div class="perf b"></div>
+  <p class="small" id="cap"></p>
+  <div class="card" id="card">
+    <div class="under" id="under"></div>
+    <canvas id="cv"></canvas>
+  </div>
+  <p class="hint" id="hint">Води пальцем — включай проектор</p>
+</section>
+
+<section class="scene" id="stats">
+  <p class="small">Немного цифр про нас</p>
+  <div class="num" id="num">0</div>
+  <p class="lab" id="lab"></p>
+  <div class="clock" id="clock"></div>
+  <p class="hint" id="shint" style="visibility:hidden">Коснись экрана, чтобы продолжить</p>
+</section>
+
+<section class="scene" id="voice">
+  <h2>Мне есть что сказать</h2>
+  <p>Нажми и послушай</p>
+  <button class="play go" id="play" aria-label="Слушать голосовое">▶</button>
+  <p class="small" id="vnote"></p>
+</section>
+
+<section class="scene" id="ask">
+  <p class="small">Тебя приглашают на особенный вечер</p>
+  <div class="ticket">
+    <h2>Билет на один вечер</h2>
+    <p>Для: <span id="who2">тебя</span></p>
+    <p class="small" id="tk"></p>
+    <p>Пойдёшь со мной на свидание?</p>
+    <button class="heart beat" id="heart" aria-label="Удерживай, чтобы согласиться">♥</button>
+    <p class="small">Если да, приложи палец к сердцу и подержи</p>
+  </div>
+  <button class="ghost" id="no">Подумаю</button>
+</section>
+
+<section class="scene" id="done">
+  <div class="ticket">
+    <h2>Билет на один вечер</h2>
+    <div class="date" id="date"></div>
+    <p id="place"></p>
+    <div class="stamp">Принято</div>
+    <p class="small">Жду тебя</p>
+  </div>
+</section>
+
+<script src="script.js" defer></script>
+</body>
+</html>
